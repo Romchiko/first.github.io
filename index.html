@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!--Если на странице используется один или несколько языков необходимо 
+прописать тег lang в саомо теге html либо в голове документа-->
+<html lang = "en">
+		<head>
+				<title>Magazine News</title>
+				<meta charset="utf-8">
+				<link href="css/style.css" rel="stylesheet" type="text/css"/>
+				<base target = "_blank">
+		</head>
+		<body>
+			 <div>
+				<div id = "header">
+					<div id = "logo">
+						<a href = "index.html"><img src = "images/logo.png" alt = "logo"></a>
+					</div>
+					
+					<div id = "baner">
+						<a href = "#"><img src = "images/banner.png" alt = "Baner"></a>
+					</div>
+					<!--В этот раз для того что бы наш родительский элемент не закрывал в себе наши блоки
+				     используем так называемые очищающие блоки заместо свойства overflow:hidden-->
+					<div class = "clear"></div>
+				</div>
+				
+				<div id = "topmenu">
+					<div id = "innermenu">
+						<ul>
+							<li><a href = "index.html">HOME</a></li>
+							<li><a href = "#">ABOUT US</a></li>
+							<li><a href = "#">ARTICLES</a></li>
+							<li><a href = "#">TECH</a></li>
+							<li><a href = "#">BUSINESS</a></li>
+							<li><a href = "#">ENTERTAINMENT</a></li>
+							<li><a href = "#">SOCIAL</a></li>
+							<li><a href = "#">MEDIA</a></li>
+							<li><a href = "#">CONTACT</a></li>	
+						</ul>
+					</div>
+				</div>
+				<div id = "wrapper">
+					<div id = "sidebar">
+						<div id = "searchform"> 
+							<h3><span>search</span></h3>
+							<form action = "#" method = "post">
+								<!--Нижний див создан для того что бы мы задали бекграунд для него а не для 
+									нижнего интпута это все делается для корректного отображения поля ввода
+									в старых браузерах-->
+								<div class = "textfield">
+									<input type = "text" placeholder = "Search here..."/>
+								</div>
+									<input type = "image" src = "..images/search.png" alt = "Search"/>
+							</form>
+						</div>
+						<div id = "sponsors">
+							<h3><span>Sponsors</span></h3>
+							<div class = "firstrow">
+								<a href = "#" class = "floatleft"><img src = "images/baner1.jpg" alt = "firstcartoon"/></a>
+								<a href = "#" class = "floatright"><img src = "images/baner2.jpg" alt = "firstcartoon"/></a>
+							</div>
+							<div class = "secondrow">
+								<a href = "#" class = "floatleft" ><img src = "images/baner3.jpg" alt = "firstcartoon"/></a>
+								<a href = "#" class = "floatright"><img src = "images/baner4.jpg" alt = "firstcartoon"/></a>
+							</div>
+						</div>
+						<div id = "subscribeform"> 
+							<h3><span>ride magazine news</span></h3>
+							<form action = "#" method = "post">
+								<!--Нижний див создан для того что бы мы задали бекграунд для него а не для 
+									нижнего интпута это все делается для корректного отображения поля ввода
+									в старых браузерах-->
+								<div class = "textfield">
+									<input type = "text" placeholder = "Into your mail..."/>
+								</div>
+									<input type = "image" src = "images/subscribe.png" alt = "Subscribe"/>
+							</form>
+						</div>
+						<div id = "categories">
+							<h3><span>categories</span></h3>
+							<ul class =  "firsttable">
+								<li><a href = "#">Facebook</a></li>
+								<li><a href = "#">Youtube</a></li>
+								<li><a href = "#">Twitter</a></li>
+								<li><a href = "#">Google Plus</a></li>
+								<li><a href = "#">How To</a></li>
+								<li><a href = "#">Apple</a></li>
+								<li><a href = "#">Social Media</a></li>
+								<li><a href = "#">Tech</a></li>
+								<li><a href = "#">Entertaiment</a></li>
+							</ul>
+							<ul class = "secondtable">
+								<li><a href = "#">About</a></li>
+								<li><a href = "#">Contact us</a></li>
+								<li><a href = "#">Site Map</a></li>
+								<li><a href = "#">Write for us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div id = "content">
+						<div class = "post">
+							<div class = "thumbnail">
+								<img src = "images/image1.jpg" alt = "One paper">
+							</div>
+							<div class = "postcontent">
+								<p class = "postcont"><a href = "#">Business</a>  &gt;  <a href = "#">Gamification</a></p>
+								<h2><a href = "#">The Evolving Role of Social Media in News Organizations [LIVE Q&amp;A] </a></h2>
+								<p class = "postpub">Posted by <a href = "#">Charlie</a> | 1 Hours ago | <a href = "#">30 comments</a></p>
+								<p>A few years ago, news organizations were unsure about social. Journalists were apprehensive to create Twitter accounts and media companies questioned whether a branded Passbook fan page was necessaryNowadays those uncertainties are irrelevant. Social media has become the driving force of many news organizations' digital strategies. They don't just want to have a presence on the social web — they want to make the most of it.That's why some newsrooms have hired social media editors and community managers to guide their social media approach. Still, the day-to-day tasks of these employees differs from organization to organization. </p>
+							</div>
+						</div>
+						
+						<div class = "post">
+							<div class = "thumbnail">
+								<img src = "images/image2.jpg" alt = "Two paper">
+							</div>
+							<div class = "postcontent">
+								<p class = "postcont"><a href = "#">Entartaiment</a>  &gt;  <a href = "#">Gaming</a></p>
+								<h2><a href = "#">Battlefield 3 Has Record Opening Weekend Despite Tech Woes</a></h2>
+								<p class = "postpub">Posted by <a href = "#">Peter</a> | 1 Hours ago | <a href = "#">36 comments</a></p>
+								<p>Battlefield series games usually focus on large, online multiplayer battles, but the series included a new Cops-vs-Robbers theme with the release of Battlefield Hardline. This title did not have nearly the emphasis on piloting vehicles as previous titles, yet there still were a number of vehicles as well as team-based infantry combat. Playing in squads has also become a major element of games in the series.Since Battlefield 2, all games in the series centrally record online statistics for each player allowing the players to receive rank promotions and weapon unlocks based on their statistics as well as awards such as medals, ribbons and pins.A class system has been present within all the Battlefield games. Each class features a different type of primary weapon along with different equipment, differentiating roles on the battlefield.The ability to melee other players with a knife has always been present in Battlefield games. Also since Battlefield 2142, the series has included an award of dog tags for each player killed using a knife.</p>
+							</div>
+						</div>
+						
+						<div class = "post">
+							<div class = "thumbnail">
+								<img src = "images/image3.jpg" alt = "Three paper">
+							</div>
+							<div class = "postcontent">
+								<p class = "postcont"><a href = "#">Teach</a>  &gt;  <a href = "#">Education</a></p>
+								<h2><a href = "#">How 5 Tech Giants Are Giving Back to Education </a></h2>
+								<p class = "postpub">Posted by <a href = "#">Stan</a> | 1 Hours ago | <a href = "#">125 comments</a></p>
+								<p>The role of teacher is often formal and ongoing, carried out at a school or other place of formal education. In many countries, a person who wishes to become a teacher must first obtain specified professional qualifications or credentials from a university or college. These professional qualifications may include the study of pedagogy, the science of teaching. Teachers, like other professionals, may have to continue their education after they qualify, a process known as continuing professional development. Teachers may use a lesson plan to facilitate student learning, providing a course of study which is called the curriculum.A teacher's role may vary among cultures. Teachers may provide instruction in literacy and numeracy, craftsmanship or vocational training, the arts, religion, civics, community roles, or life skills.A teacher who facilitates education for an individual may also be described as a personal tutor, or, largely historically, a governess.In some countries, formal education can take place through home schooling. Informal learning may be assisted by a teacher occupying a transient or ongoing role, such as a family member, or by anyone with knowledge or skills in the wider community setting</p>
+							</div>
+						</div>
+						
+						<div class = "post">
+							<div class = "thumbnail">
+								<img src = "images/image4.jpg" alt = "Four paper">
+							</div>
+							<div class = "postcontent">
+								<p class = "postcont"><a href = "#">Business</a>  &gt;  <a href = "#">Apple</a></p>
+								<h2><a href = "#">Apple Gives Its Key Execs $400 Million in Bonuses</a></h2>
+								<p class = "postpub">Posted by <a href = "#">Daniel</a> | 1 Hours ago | <a href = "#">78 comments</a></p>
+								<p>Eddy Cue, the recently promoted SVP of Internet Software and Services, received 100,000 instead of 150,000 like Apple's other SVPs. However, Cue received 100,000 shares when he was first promoted to SVP in September. Each 100,000 stock grant is worth $40 million.Apple's execs won't be able to spend their new-found wealth immediately, though. Fifty percent of Forstall, Mansfield, Oppenheimer, Schiller, Williams and Sewell's shares will vest in June 2012, while the other half will vest in March 2016. Cue is on a different vesting schedule: 25% of his shares will vest in September 2014, while the other 75% will vest in September 2016."Our executive team is incredibly talented and they are all dedicated to Apple's continued success," an Apple spokesperson said in a statement. "These stock grants are meant to reward them down the road for their hard work in helping to keep Apple the most innovative company in the world." </p>
+							</div>
+						</div>
+						
+						<div class = "post">
+							<div class = "thumbnail">
+								<img src = "images/image5.jpg" alt = "Five paper">
+							</div>
+							<div class = "postcontent">
+								<p class = "postcont"><a href = "#">Social Media</a>  &gt;  <a href = "#">Business</a></p>
+								<h2><a href = "#">7 Ways to Create a Memorable Customer Experience With Social Media</a></h2>
+								<p class = "postpub">Posted by <a href = "#">Mark</a> | 1 Hours ago | <a href = "#">155 comments</a></p>
+								<p>Some companies are afraid to set up Facebook pages because they allow customers to comment, which means someone might write something negative. It seems counterintuitive, but you should actually want customers to complain on your company's Facebook page. If your customers are complaining about you on their personal, privacy-protected Facebook profiles, you have no way to know if they're complaining, much less reach out to them and make it right.When customers complain on your brand's Facebook page, you can respond and resolve issues. If you do it right (and get a little lucky), unhappy customers will turn their opinions around and recommend you to friends because of your fantastic customer service. </p>
+							</div>
+						</div>
+						<div id = "pagenation">
+							<ul>
+								<li><a id = "page" href = "#">1</a></li>
+								<li><a href = "#">2</a></li>
+								<li><a href = "#">3</a></li>
+								<li><a href = "#">4</a></li>
+								<li><a href = "#">5</a></li>
+								<li><a href = "#">6</a></li>
+								<li><a href = "#">7</a></li>
+								<li><a href = "#">8</a></li>
+								<li><a href = "#">9</a></li>
+								<li><a href = "#">10</a></li>
+								<li><a href = "#">11</a></li>
+								<li><a id = "next" href = "#">&#187;</a></li>
+								<li><a href = "#">25</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<footer id = "footer">
+					<div id = "footertop"></div>
+					
+					<div id = "footermiddle">
+						<div id = "middlecontent">
+							<div class = "footerbocks">
+								<!--Оборачиаем наш див в котором будем загружать картинку в еще один див-
+								и уже в нем задаем нужные нам отступы-->
+								<div id = "magazine">
+									<p>Ride Magazine was founded in 2012.</p>
+									<p>Ride Magazine is a full service Web Design, 
+									Marketing and Advertising Company geared to help 
+									small to medium size businesses create a plan to
+									succeed. Form Graphics, Print (Display ad, 
+									brochures, etc.), Internet research &amp; Marketing 
+									and Web Site Design and Development, High 
+									Magazine can do it all for you.</p>
+									<p>Our mission is to serve our clients big or small with 
+									the same passion, integrity, loyalty and 
+									effectiveness, without the high expense normally 
+									associated with these types of services.</p>
+								</div>	
+							</div>
+					
+							<div class = "footerbocks">
+								<div id = "resentpost"> 
+									<h3><span>resent posts</span></h3>
+									<ul>
+										<li><a href = "#">TV Guide.com</a></li>
+										<li><a href = "#">7 Ways to Create a Memorable Customer Experience With Social Media</a></li>
+										<li><a href = "#">Apple Gives Its Key Execs $400 Million in Bonuses</a></li>
+										<li><a href = "#">How 5 Tech Giants Are Giving Back to Education</a></li>
+										<li><a href = "#">Battlefield 3 Has Record Opening Weekend Despite Tech Woes</a></li>
+										<li><a href = "#">The Evolving Role of Social Media in News Organizations [LIVE Q&amp;A]</a></li>
+									</ul>
+								</div>
+							</div >
+							
+							<div class = "footerbocks" id = "footerbocks">
+								<div id = "archives">
+									<h3><span>our archives</span></h3>
+									<ul>
+										<li>March 2011</li>
+										<li>February 2011</li>
+										<li>Jenary 2011</li>
+										<li>December 2011</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div id = "footerbottom">
+						<div id = "bottomcontent">
+							<p class = "left">Copyright &copy; 2011 <a href = "#">Ride Magazine</a> All Right Reserved.</p>
+							<p class = "right">Powered by <a href = "">WordPress</a> - Designed &amp; Developed By <a href = "#">Mahdi El Hanafi.</a></p>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</body>
+</html>
