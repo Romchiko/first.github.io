@@ -1,0 +1,402 @@
+@import url(reset.css);
+/*Так как мы создаем так называемый резиновый сайт то размеры дива
+мы будем задавать не width height а немного иначе*/
+
+.clear{
+	clear:both;
+	
+}
+body{
+	font:13px/1.4 Arial,Verdana, Tahoma, sans-serif;
+	background: url(../images/bg.jpg) repeat;
+	color:#5e5e5e;
+	
+}
+
+a{
+	text-decoration:none;
+	color:#5e5e5e;
+}
+
+a:hover{
+	text-decoration:underline;
+}
+
+
+h2{
+	
+	font-size:18px;
+	line-height:1.1;
+	margin-bottom:7px;
+}
+
+p{
+	margin:7px 0 15px 0;	
+}
+
+
+#logo{
+	width:241px;
+	height:46px;
+	float:left;
+	margin:44px 0 42px 10px;
+}
+
+#baner{
+	width:468px;
+	height:60px;
+	float:right;
+	margin:34px 10px 37px 0; 
+}
+/*Если сайт резиновый и мы имеем элемент на всю ширину экрана то что бы он не обрезался при сжатии 
+необходимо ему так же прописывать минимульную ширину*/
+#topmenu{
+	min-width:960px;
+	height:49px;
+	background:url(../images/top_menu_bg.png) repeat-x;	
+}
+
+#innermenu, #wrapper, #middlecontent, #header, #bottomcontent{
+	min-width:960px;
+	max-width:1200px;
+	margin:0 auto;
+}
+
+#wrapper{
+	overflow:hidden;
+}
+
+/*В случаях со списками необходимо их указывать рядом с селектором*/
+#innermenu ul li{
+	float:left;
+	text-transform:uppercase;
+}
+
+#innermenu a {
+	color:#ebebeb;
+	font-size:12px;
+	padding:16px 15px;
+	display:block;
+}
+
+#innermenu a:hover{
+	background: url(../images/menu_poloska.png) repeat-x;
+	text-decoration:none;
+}
+
+/*Помни что при создании резинового сайта если у нас есть сайт-бар и область с основынм контентом то как правило сайт-бар
+задается фиксированной ширины а уже область с контентом растягивается или сжимается*/
+
+#sidebar{
+	width:310px;
+	float:right;
+	overflow:hidden;
+	padding-right:10px;
+}
+
+#sidebar h3{
+	font-size:15px;
+    color:#999999;
+	text-transform:uppercase;
+	font-weight:bold;
+	background: url(../images/saidbar.png) repeat-x 0 5px;
+	padding-left:23px;
+	margin:26px 0 25px 0;
+}
+
+#sidebar form{
+	width:220px;
+	margin:0 auto;
+	
+	
+}
+
+/*Ниже показан пример как сделать пустоту между нашей полоской бэкграунда
+а именно задать бэкграунд нашей страницы*/
+#sidebar h3 span{
+	background: url(../images/bg.jpg) repeat;
+	padding:0 6px 0 6px;
+}
+
+#content{
+	margin-right:300px;
+	padding:30px 38px 0px 10px;
+}
+
+
+
+.post{
+	border-bottom:1px dashed #e5e5e5;
+	overflow:hidden;
+	margin-top:15px;
+}
+
+.post:first-child{
+	margin:0;
+	
+}
+
+.thumbnail{
+	float:left;
+	margin-bottom:15px;
+}
+
+.thumbnail img{
+	border:3px solid #e0e0e0;
+	
+}
+
+.postcontent{
+	margin-left:180px;
+	
+}
+
+.postcont, .postpub{
+	font-family:Georgia, "Times New Roaman", serif;
+	color:#aaaaaa;
+	margin:0 0 5px 0;
+}
+/*Помним что background:position первая переменная опускает по горизонтали 2-ая по вертикали*/
+
+
+.textfield{
+	width:140px;
+	height:31px;
+	background: url(../images/input.png) no-repeat;
+	float:left;
+	
+}
+
+/*Так как у нас имеется бэкграунд нашего инпута то необходимо свести стандартный к нулю*/
+/*Есжи же в браузере при нажатии на наш инпут возникает рамка то применим свойство outline:0;*/
+.textfield  input{
+	background:none;
+	border:none;
+	font:12px;
+	color:#b1b1b1;
+	padding:10px 8px;
+	width:120px;
+	height:16px;
+	outline:0;
+	
+}
+
+
+.firstrow, .secondrow{
+	width:270px;
+	margin:0 auto;
+	overflow:hidden;
+}
+
+.floatleft{
+	float:left;
+	display:block;
+	height:125px;
+}
+	
+.floatright{
+	float:right;
+	display:block;
+	height:125px;
+}
+
+.secondrow{
+	padding-top:13px;
+}
+
+#categories{
+	overflow:hidden;
+	
+}
+
+#categories ul{
+	width:140px;
+}
+
+#categories ul li{
+	border-top:1px dashed #e3e3e3;
+	padding:8px 0;	
+}
+
+
+#categories ul li a{
+	font-weight:bold;
+}
+
+#categories ul li:first-child{
+	border-top:none;
+}
+
+#categories h3{
+	margin-bottom:14px;
+	
+}
+
+.firsttable{
+	float:left;
+		
+}
+
+.secondtable{
+	float:right;
+}
+
+#pagenation{
+	margin:32px 0 32px 0;
+}
+
+#pagenation ul{
+	overflow:hidden;
+}
+
+#pagenation ul li{
+	float:left;
+	margin-right:2px;
+}
+
+#pagenation ul li a{
+	display:block;
+	padding:7px 13px;
+	border-bottom:3px solid #cccccc;
+}
+
+#pagenation ul li a:hover{
+	text-decoration:none;
+	background-color:#e7e7e7;
+}
+
+#pagenation #page{
+	background:#333333;
+	border:none;
+	color:#ffffff;
+	padding-bottom:10px;
+}
+
+#pagenation #next{
+	padding-bottom:9px;
+	padding-top:5px;
+}
+
+#footer{
+	min-width:960px;
+	color:#e0e0e0;
+}
+
+#footertop{
+	height:19px;
+	background:url(../images/footertopbg.png) repeat-x;
+}
+
+#footermiddle{
+	background: url(../images/footermidbg.png);
+	color:#e0e0e0;
+}
+
+#footermiddle h3{
+	background: url(../images/footerh3bg.png) repeat-x 0 4px;
+	color:#ffffff;
+	text-transform:uppercase;
+	font-size:14px;
+	font-weight:bold;
+	width:218px;
+	margin-bottom:11px;
+}
+
+#footermiddle h3 span{
+	background: url(../images/footermidbg.png);
+	padding-right:14px;
+}
+
+
+#middlecontent{
+	overflow:hidden;
+	padding-bottom:60px;
+}
+
+/*ВААЖНО! Если родитель ничем не ограничен то отступ скажем сверху у ребенка может выступать
+за родителя и между элементами будет щель поэтому важно задать либо отступ либо бордер*/
+/*ВАЖНО! Так как сайт резиновый и мы задали отступы в процентах то при задании каких либо падингом 
+наша верстка полетит а в данном случае нам необходимо еще задать картинку в таком случае поступим так*/
+.footerbocks {
+	padding-top:55px;
+	width: 30%;
+	margin-right: 5%;
+	float:left;
+}
+/*Оборачиваем наш див в который нужно будет загрузить картинку в еще один див
+и уже в нем задаем все нужные нам отступы*/
+/*Помним что позиционирование идет так:лево право верх низ*/
+#magazine{
+	background: url(../images/logofooter.png) no-repeat 10px 0;
+	padding:49px 0 0 10px;
+}
+
+#footerbocks{
+	margin-right:0;	
+}
+
+#archives{
+	margin-right:10px;
+	
+}
+
+/*Наш бэкграунд появился сверху для того что бы сместить его вниз прописываем позишн*/
+#resentpost ul li, #archives ul li{
+	background:url(../images/dashedbg.png) repeat-x left bottom;
+	padding:12px 0;
+}
+
+#resentpost ul li a, #archives ul li a{
+	color:#e0e0e0;
+}
+
+#footerbottom{
+	background:url(../images/fbbg.png) repeat-x;
+}
+
+#footerbottom p{
+	margin:0;
+	padding:26px 10px;
+}
+
+#bottomcontent{
+	overflow:hidden;
+	color:#e0e0e0;
+}
+
+#bottomcontent a{
+	color:#8f8f8f;
+}
+
+.left{
+	float:left;
+	display:block;
+}
+.right{
+	float:right;
+	display:block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
